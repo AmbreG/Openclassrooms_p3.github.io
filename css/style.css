@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #569C87;
+}
+
+h1 {
+    color: #FCCA46;
+    font-size: 5em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*********** BOUTON RECHERCHE **********/
+input {
+	outline: none;
+}
+
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+input[type=search] {
+    background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	background-color: lightgrey;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	display: flex;
+    justify-content: flex-start;
+    width: 97.1%;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input[type=search]:focus {
+	background-color: #fff;
+	border-color: #FCCA46;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/********** MAIN ****************/
+
+img {
+    width: 100%;
+}
+
+#menu {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#menu a {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;  
+    margin: 25px;
+    width: 30%;
+}
+
+#menu img:hover {
+    box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
+}
+/************ BOUTON PROCHAINEMENT **********/
+
+#next {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    background-color: #569C87;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#next p {
+    font-size: 2em;
+    color: #FCCA46;
+}
+
+
+/************ MENU 1 **********/
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 2em;
+}
+
+.menu_details {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/********** FOOTER ***********/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #569C87;
+}
+
+footer p {
+    color: #FCCA46;
+    font-size: 2em;
+    padding: 0 10px 0 10px;
+}
