@@ -16,6 +16,10 @@ h1 {
     font-size: 5em;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     display: flex;
     justify-content: center;
