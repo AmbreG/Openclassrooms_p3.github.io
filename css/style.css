@@ -2,7 +2,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -42,7 +41,7 @@ input[type=search] {
 
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-	display: none; 
+	display: none;
 }
 input[type=search] {
     background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
@@ -52,7 +51,7 @@ input[type=search] {
 	display: flex;
     justify-content: flex-start;
     width: 100%;
-	
+
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
@@ -61,7 +60,7 @@ input[type=search] {
 input[type=search]:focus {
 	background-color: #fff;
 	border-color: #FCCA46;
-	
+
 	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
@@ -91,7 +90,7 @@ img {
 }
 
 #menu {
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -100,11 +99,11 @@ img {
 #menu a {
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgray;  
+    border: 1px solid lightgray;
     margin: 25px;
     width: 30%;
     overflow: hidden;
-    opacity: 0.5;
+    opacity: 0.8;
     transition: 0.5s;
 }
 
@@ -171,41 +170,217 @@ img {
 
 /************ PAGES MENU **********/
 
-/* h2 {
+.menulist {
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 1;
+}
+
+.menulist img {
+    width: 30%;
+    height: 8vh;
+}
+
+.menulist article {
+    margin-bottom: 8%;
+}
+
+.menulist h2, h3, p {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto';
     font-size: 2em;
+}
+
+.menu_title {
+    font-size: 2em;
+    margin-bottom: 5%;
+}
+
+.line_title {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+#menu_note {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Handlee', cursive;
+    width: 80%;
+    background-color: #FCDFDB;
+    margin: auto;
+    padding: 2%;
+}
+
+#menu_chic {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    background-color: #FFF5FE;
+    margin: auto;
+    padding: 2%;
+}
+
+#menu_chic .menu_title {
+    color: transparent;
     position: relative;
+    background-clip: text;
+    font-family: 'Lobster', cursive;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, rgba(227,138,18,1) 0%, rgba(158,110,254,1) 100%);
 }
 
-h2::after {
-    width: 30%;
-    content: '';
-    transform-origin: 0 0; 
-    transform: scaleX(0);
-    position: absolute;
-    bottom: 0;
-    left: 35%;
-    right: 0;
-    height: .1em; 
-    background: black;
-    z-index: -1;
-    opacity: 0.8;
-    transition: transform .5s;
+#menu_chic .menu_entrée {
+    color: #C47412;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2:hover::after {
-    transform: scaleX(1);
-} */
+#menu_chic .menu_plats {
+    color: #b158a1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu_chic .menu_dessert {
+    color: #4c15d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu_delice {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Handlee', cursive;
+    background-color: #EDEFEF;
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+}
+
+#menu_delice .menu_title {
+    color: transparent;
+    position: relative;
+    font-family: 'Dancing Script';
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, rgba(0,35,219,1) 0%, rgba(38,155,249,1) 100%, rgba(76,21,214,1) 100%);
+}
+
+
+#menu_palette {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Handlee', cursive;    
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+}
+
+#menu_palette .menu_title {
+    color: transparent;
+    position: relative;
+    font-family: 'Kaushan Script', cursive;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, rgba(62,146,58,1) 0%, rgba(197,255,140,1) 100%);
+}
+
+
+
+
+.menulist i.fas:before {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right top, #f05161, #f05b65, #f0646a, #f06d6f, #f07574, #f17f79, #f2887e, #f39184, #f59d8c, #f6aa95, #f8b5a0, #f9c1ab);
+}
+
+.desklist li{
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+.desklist li:first-child {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8%;
+}
+
+.desklist li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+
+.menu_dessert li {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 1;
+}
+
+.menu_dessert li:last-child {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer_title {
+    display: flex;
+    justify-content: center;
+}
+
+/*********** Animation trait sous titre **********/
+.meal{
+    position: relative;
+    line-height: 20px;
+    margin: 10px 15px;
+    
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.meal:hover {
+    color: black;
+}
   
-.menu_details {
-    margin: 0 auto;
-    width: 70%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.meal:before,
+.meal:after {
+    width:0;
+    content: "";
+    bottom: -10px;
+    background: black;
+    height: 2px;
+    position: absolute;
+    
+    -webkit-transition: width .5s ease;
+    -moz-transition: width .5s ease;
+    -o-transition: width .5s ease;
+    transition: width .5s ease;
 }
 
+.meal:before {
+    right: 50%;
+}
+
+.meal:after {
+    left: 50%;
+}
+
+.meal:hover:before,
+.meal:hover:after {
+    width: 50%;
+}
 
 /********** MENTIONS LEGALES *********/
 
@@ -217,7 +392,7 @@ h2:hover::after {
 
 #mention h2 {
     display: flex;
-    justify-self: start;
+    justify-content: center;
 }
 
 #mention h1 {
@@ -249,8 +424,8 @@ footer a {
 }
 
 footer a:hover {
-    animation: shake 0.2s; 
-    animation-iteration-count: infinite; 
+    animation: shake 0.2s;
+    animation-iteration-count: infinite;
     cursor: pointer;
 }
 
@@ -259,11 +434,25 @@ footer a:hover {
 @media screen and (max-width: 768px){
 
     main {
+        width: 100%;
         margin-bottom: 15%;
     }
 
     h1 {
         font-size: 3em;
+    }
+
+    .menulist h2 {
+       font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .menulist li{
+        font-size: 0.8em;
+        margin-left: 0;
     }
 
     #menu a {
@@ -273,7 +462,7 @@ footer a:hover {
     }
 
     #next {
-        font-size: 1em; 
+        font-size: 1em;
         width: 50%;
         margin-bottom: 15px;
      }
@@ -287,6 +476,13 @@ footer a:hover {
         width: 8px;
         height: 8px;
         margin-top: 25px;
+    }
+
+    #menu_note {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
     }
 }
 
