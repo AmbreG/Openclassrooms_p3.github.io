@@ -292,9 +292,7 @@ img {
 }
 
 
-
-
-.menulist i.fas:before {
+.menulist .fa-music:before {
     font-size: 100px;
     display: flex;
     justify-content: center;
@@ -338,7 +336,7 @@ img {
     justify-content: center;
 }
 
-/*********** Animation trait sous titre **********/
+/*********** ANIMATION TRAIT H3 **********/
 .meal{
     position: relative;
     line-height: 20px;
@@ -349,17 +347,13 @@ img {
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-
-.meal:hover {
-    color: black;
-}
   
 .meal:before,
 .meal:after {
     width:0;
     content: "";
     bottom: -10px;
-    background: black;
+    background: #3c3d3e;
     height: 2px;
     position: absolute;
     
@@ -367,6 +361,10 @@ img {
     -moz-transition: width .5s ease;
     -o-transition: width .5s ease;
     transition: width .5s ease;
+}
+
+.meal:hover {
+    cursor: default;
 }
 
 .meal:before {
@@ -380,6 +378,40 @@ img {
 .meal:hover:before,
 .meal:hover:after {
     width: 50%;
+}
+
+
+/****** BOUTTON SUIVANT/PRECEDENT ********/
+
+.button-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 20%;
+}
+
+.button-nav .fas {
+    color: #569C87;
+    font-size: 5em;
+    transition:0.5s;
+}
+
+.button-nav .fas:hover {
+    transform : scale(1.2);
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
 }
 
 /********** MENTIONS LEGALES *********/
@@ -442,6 +474,11 @@ footer a:hover {
         font-size: 3em;
     }
 
+    #menu_note, #menu_chic, #menu_delice, #menu_palette {
+        width: 100%;
+        margin: 0;
+    }
+
     .menulist h2 {
        font-size: 1em;
     }
@@ -453,6 +490,11 @@ footer a:hover {
     .menulist li{
         font-size: 0.8em;
         margin-left: 0;
+    }
+
+    .menulist img {
+        width: 20%;
+        height: 5vh;
     }
 
     #menu a {
@@ -483,6 +525,11 @@ footer a:hover {
         justify-content: center;
         margin: 0;
         width: 100%;
+    }
+
+    .button-nav .fas {
+        font-size: 2em;
+        margin-top: 250px;
     }
 }
 
