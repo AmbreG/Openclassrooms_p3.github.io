@@ -24,8 +24,8 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    margin-bottom: 5%;
+    width: 80%;
+    margin: auto;
 }
 
 /*********** BOUTON RECHERCHE **********/
@@ -103,7 +103,7 @@ img {
     margin: 25px;
     width: 30%;
     overflow: hidden;
-    opacity: 0.8;
+    opacity: 0.7;
     transition: 0.5s;
 }
 
@@ -123,11 +123,11 @@ img {
     width: 30%;
     background-color: #569C87;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: auto;
+    margin-bottom: 6%;
 }
 
 #next p {
-    padding-left: 20px;
     font-size: 2em;
     color: #FCCA46;
 }
@@ -174,7 +174,8 @@ img {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
-    line-height: 1;
+    line-height: 2;
+    margin-bottom: 3%;
 }
 
 .menulist img {
@@ -249,6 +250,10 @@ img {
 #menu_chic .menu_dessert {
     color: #4c15d6;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu_dessert ul li {
+    line-height: 3;
 }
 
 #menu_delice {
@@ -462,12 +467,18 @@ footer a:hover {
 }
 
 
+/************* DESKTOP VERSION **********/
+@media screen and (max-width: 1199px){
+
+}
+
+
 /************ VERSION TABLETTE/MOBILE **********/
 @media screen and (max-width: 768px){
 
     main {
         width: 100%;
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 
     h1 {
@@ -489,7 +500,7 @@ footer a:hover {
 
     .menulist li{
         font-size: 0.8em;
-        margin-left: 0;
+        margin: auto;
     }
 
     .menulist img {
@@ -530,6 +541,10 @@ footer a:hover {
     .button-nav .fas {
         font-size: 2em;
         margin-top: 250px;
+    }
+
+    footer {
+        height: 5vh;
     }
 }
 
