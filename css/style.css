@@ -467,12 +467,6 @@ footer a:hover {
 }
 
 
-/************* DESKTOP VERSION **********/
-@media screen and (max-width: 1199px){
-
-}
-
-
 /************ VERSION TABLETTE/MOBILE **********/
 @media screen and (max-width: 768px){
 
@@ -481,13 +475,13 @@ footer a:hover {
         margin-bottom: 10%;
     }
 
-    h1 {
-        font-size: 3em;
+    header {
+        width: 100%;
     }
 
-    #menu_note, #menu_chic, #menu_delice, #menu_palette {
-        width: 100%;
-        margin: 0;
+
+    h1 {
+        font-size: 3em;
     }
 
     .menulist h2 {
@@ -515,27 +509,30 @@ footer a:hover {
     }
 
     #next {
-        font-size: 1em;
         width: 50%;
-        margin-bottom: 15px;
-     }
+        height: 8vh;
+        margin: auto;
+    }
 
-    #next p, footer a {
+    #next p {
+        font-size: 1em;
+        margin-left: 20%;
+    }
+
+    footer a {
         font-size: 1em;
         padding-right: 10px;
     }
 
     .box {
-        width: 8px;
-        height: 8px;
-        margin-top: 25px;
+        display: none;
     }
 
-    #menu_note {
+    #menu_note, #menu_chic, #menu_delice, #menu_palette {
         display: flex;
         justify-content: center;
         margin: 0;
-        width: 100%;
+        width: 95%;
     }
 
     .button-nav .fas {
